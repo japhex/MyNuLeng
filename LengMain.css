@@ -1,0 +1,349 @@
+/*font-family: manifesto;
+src: url(MANIFESTO.ttf);*/
+@font-face {
+    font-family: manifesto;
+    src: url(MANIFESTO.ttf);
+}
+* {
+margin: 0;
+padding: 0;
+}
+body {
+  background: url(lengover2.1.jpg) center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: manifesto;
+}
+.header {
+  text-align: center;
+}
+.header img {
+  margin: auto;
+  height: 200px;
+  width: 320px;
+  margin-top: 5px;
+}
+/* #CECECE; */
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color:rgba(2, 2, 2, 0.5);
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgba(2, 2, 2, 0.5);
+    height: 45px;
+    width: 45px;
+    color: #CECECE;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(2, 2, 2, 0.5);
+    min-width: 160px;
+    box-shadow: rgba(2, 2, 2, 0.5);
+}
+.dropdown-content a {
+    color: #CECECE;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+  color: #ff0000; /*sky blue*/
+  background-color: #f1f1f1;
+  transition: 4s;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: rgba(2, 2, 2, 0.5);
+}
+/* rgba(2, 2, 2, 0.5) rgba(83, 83, 83, 0.1); */
+/*.header {
+  background:  rgba(2, 2, 2, 0.5);
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+/* #CECECE; #535353;*/
+.header h1 {
+  font-size: 2.7em;
+  color: #CECECE;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin: 0;
+  padding-top: 8px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+/*.logo img {
+  height: 50px;
+  width: 50px;
+}*/
+.jumbotron {
+  background: rgba(2, 2, 2, 0.5);
+  margin-top: 800px;
+  display: block;
+  height: 800px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+video {
+  width: 100%;
+}
+#m8sSection {
+  margin: 0;
+  padding: 0;
+  height: 700px;
+  width: 100%;
+  background-color: rgba(2, 2, 2, 0.5); /*#000001;*/
+  padding-top: 0;
+  margin-top: 0;
+}
+#m8sSection iframe {
+  position: relative;
+  top: 70px;
+  left: 140px;
+  border-radius: 5%;
+}
+#m8sSection img {
+  position: relative;
+  top: 60px;
+  left: 140px;
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  margin-bottom: 420px;
+  border-radius: 2%;
+}
+.dates {
+  height: 700px;
+  background: rgba(2, 2, 2, 0.9); /*#000001;*/
+  width: 100%;
+  overflow: hidden;
+}
+.dates img {
+  margin-top: px;
+  height: 700px;
+  width: 700px;
+  margin-right: 100px;
+}
+.dates  {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.dates h2 {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  font-size: 35px;
+  color: #fff;
+}
+.tour-date {
+  display: inline-block;
+}
+.tour-day {
+  display: inline-block;
+}
+.tour-venue {
+  display: inline-block;
+}
+.tour-location {
+  display: inline-block;
+}
+.dates .container ul li {
+  display: inline-block;
+  padding: 15px;
+}
+.underline {
+  border-bottom: 1px solid #fff;
+  width: 1125px;
+  margin-bottom: 5px;
+}
+ .btn  {
+  /*margin-left: 480px;
+  margin-top: 30px;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: black;
+  background-color: #fff;
+  font-size: 15px;
+}
+.btn a:hover {
+  color: #ff0000;
+  text-decoration: none;
+  background-color: #fff;
+}
+.footer ul {
+  margin-top: 150px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer ul li {
+  display: inline;
+  font-size: 17px;
+  padding: 20px;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  color: #b20000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+
+ #m8sSection iframe {
+    left: 7px;
+  }
+  #m8sSection img {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1030px) {
+
+  .jumbotron {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+  .dates .container ul {
+    color: #fff;
+    font-size: 1.063em;
+    border-bottom: 1px solid #fff;
+  }
+  #m8sSection {
+      margin-top: 600px;
+  }
+
+.btn {
+    margin-left: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #m8sSection {
+    height: 100%;
+    width: auto;
+    /* Color If Fixed Background no work*/
+    background: #000000;
+  }
+  #m8sSection iframe {
+    display: block;
+    left: 0px;
+    top: 0px;
+    padding: 15px;
+    width: 300px;
+    height: 380px;
+    margin: auto;
+  }
+  #m8sSection img {
+    display: none;
+  }
+  .bar {
+    display: none;
+  }
+  .dates {
+    font-size: 13px;
+    width: auto;
+    height: 100%;
+    /* Color If Fixed Background no work*/
+    background: #000000;
+  }
+  .dates h2 {
+    padding-bottom: 30px;
+  }
+  .footer {
+    width: auto;
+    height: 100%;
+  }
+  .footer ul {
+    margin-top: 25px;
+  }
+  .dates .container ul {
+      border-bottom: 1px solid #b20000;
+  }
+  .underline {
+    display: none;
+  }
+  .btn {
+    margin-left: 0px;
+  }
+}
+/*
+@media screen and (max-width: 500px) {
+
+  .header img {
+  margin-right: 0px;
+  }
+  .jumbotron {
+    display: none;
+  }
+  #m8sSection {
+  }
+  video {
+    display: none;
+  }
+  body {
+    background: none;
+  }
+  .dates {
+    margin-top: 600px;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+ body {
+   font-size: 13px;
+ }
+.dates {
+  margin-top: 600px;
+}
+body {
+  background: #000000;
+}
+.header img {
+    margin-right: 6px;
+  }
+}/*
