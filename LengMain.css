@@ -1,5 +1,7 @@
 /*font-family: manifesto;
 src: url(MANIFESTO.ttf);*/
+
+
 @font-face {
     font-family: manifesto;
     src: url(MANIFESTO.ttf);
@@ -16,6 +18,10 @@ body {
   height: 100%;
   font-family: manifesto;
 }
+#container {
+  display: none;
+}
+
 .header {
   text-align: center;
 }
@@ -287,7 +293,6 @@ video {
   #m8sSection img {
     display: none;
   }
-
   #m8sSection iframe {
     top: 0px;
     left: 60px;
@@ -321,13 +326,41 @@ video {
 }
 
 /* ipad horizontal */
-@media screen and (max-width: 800px) and (max-height: 768px) {
+@media screen and (max-width: 1030px) and (max-height: 768px) {
 
+  #container {
+    display: inline-block;
+    background-image:url("lengcover2.jpg");
+    background-attachment:scroll;
+    background position:left top;
+    background-size:cover;
+    width:100%;
+    height:800px;
+    will-change: transform; // creates a new paint layer
+    z-index: -1;
+
+}
+  #container img {
+    height: 200px;
+    width: 290px;
+    margin-left: 400px;
+  }
+  .header {
+    display: none;
+  }
+  #m8sSection {
+    margin-top: 0px;
+    background: #000000;
+  }
+  .dates {
+    background: #000000;
+  }
   #m8sSection {
     height: 500px;
   }
 
   #m8sSection iframe {
+    top: 60px;
     left: 5px;
     height: 380px;
     width: 500px;
@@ -349,9 +382,34 @@ video {
 /* ipad vertical */
 @media screen and (max-width: 800px) and (max-height: 1024px) {
 
+  #container {
+  display: inline-block;
+  background-image:url("phoneleng.jpg");
+  background-attachment:scroll;
+  background position:left top;
+  background-size:cover;
+  width:100%;
+  height:1200px;
+}
+#container img {
+  height: 200px;
+  width: 290px;
+}
+.header img  {
+  display: none;
+}
+.header .dropdown {
+  display: none;
+
+}
   #m8sSection {
-    height: 500px;
-  }
+  margin-top: 0px;
+  height: 500px;
+  background: #000000;
+}
+.dates {
+  background: #000000;
+}
   #m8sSection iframe {
     top: 60px;
     height: 380px;
@@ -366,6 +424,55 @@ video {
     margin-top: 50px;
   }
 }
+
+/* Iphone LRG Horizontal */
+@media screen and (max-width: 667px) and (max-height: 375px) {
+
+  #container img {
+    height: 100px;
+    width: 150px;
+    margin-left: 260px;
+    margin-top: 8px;
+  }
+
+  #container {
+    background-image: url(lengcover2.jpg);
+    background-size: contain;
+  }
+  #m8sSection {
+    background: #000000;
+  }
+  .dates {
+    background: #000000;
+  }
+  #m8sSection iframe {
+    left: 33px;
+  }
+  .dates {
+    height: 900px;
+  }
+}
+
+/* IPHONE 5 HORI */
+
+@media screen and (max-width: 570px) and (max-height: 320px) {
+
+  #container img {
+    margin-left: 200px;
+  }
+  #m8sSection iframe {
+    width: 280px;
+    left: 5px;
+  }
+  .footer ul {
+    margin-top: 20px;
+  }
+  .dates .container ul {
+      border-bottom: 1px solid #b20000;
+  }
+}
+
+/* SMARTPHONE VERT LRG */
 
 @media screen and (max-width: 500px) {
 
@@ -385,6 +492,16 @@ video {
     height: 380px;
     margin: auto;
     border: none;
+  }
+  #container {
+    height: 800px;
+  }
+  #container img {
+    margin: auto;
+    height: 100px;
+    width: 150px;
+    margin-top: 5px;
+    /*margin-left: 80px;*/
   }
   .bar {
     display: none;

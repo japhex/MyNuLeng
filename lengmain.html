@@ -16,6 +16,9 @@
     <link type="text/css" rel="stylesheet" href="LengMain.css">
   </head>
   <body>
+    <div id="container">
+      <img src="mnl-summer-2016Land(1).png">
+    </div>
     <div class="header">
       <img src="mnl-summer-2016Land(1).png">
       <!--<h1> MY NU LENG </h1>-->
@@ -118,11 +121,11 @@
       </div>
       <div class="footer">
         <ul>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">twitter</a></li>
+          <li><a href="https://www.facebook.com/mynuleng/">facebook</a></li>
+          <li><a href="https://twitter.com/MyNuLeng?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a></li>
           <li><a href="#">email</a></li>
-          <li><a href="#">instagram T</a></li>
-          <li><a href="#">instagram J</a></li>
+          <li><a href="https://www.instagram.com/tommyleng/?hl=en">instagram T</a></li>
+          <li><a href="https://www.instagram.com/jamleng/">instagram J</a></li>
         </ul>
       </div>
       </div>
@@ -147,7 +150,14 @@
         <div class="btn"><a href="#">TICKETS</div>
       </div>
     </div>-->
-     <!--JavaScript Background Change-->
+     <!--JavaScript Fixed Mobile--> <!--TOO DAMN CHOPPY NEEDS FIXING -->
+     <script>
+     $(window).scroll(function() {
+   var scrolledY = $(window).scrollTop();
+   $('#container').css('background-position', 'left ' + ((scrolledY)) + 'px');
+ });
+</script>
+<!--JavaScript Background Change-->
     <script>
     var header = $('body');
 
