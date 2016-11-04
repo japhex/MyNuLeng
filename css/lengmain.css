@@ -4,14 +4,14 @@ src: url(MANIFESTO.ttf);*/
 
 @font-face {
     font-family: manifesto;
-    src: url(MANIFESTO.ttf);
+    src: url(../fonts/MANIFESTO.ttf);
 }
 * {
 margin: 0;
 padding: 0;
 }
 body {
-  background: url(lengover2.1.jpg) center top no-repeat;
+  background: url(images/lengover2.1.jpg) center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
@@ -330,7 +330,7 @@ video {
 
   #container {
     display: inline-block;
-    background-image:url("lengcover2.jpg");
+    background-image:url("images/lengcover2.jpg");
     background-attachment:scroll;
     background position:left top;
     background-size:cover;
@@ -384,7 +384,7 @@ video {
 
   #container {
   display: inline-block;
-  background-image:url("phoneleng.jpg");
+  background-image:url("images/phoneleng.jpg");
   background-attachment:scroll;
   background position:left top;
   background-size:cover;
@@ -436,7 +436,7 @@ video {
   }
 
   #container {
-    background-image: url(lengcover2.jpg);
+    background-image: url(images/lengcover2.jpg);
     background-size: contain;
   }
   #m8sSection {

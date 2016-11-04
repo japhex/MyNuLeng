@@ -14,7 +14,7 @@ var leng = {
     },
     backgroundChange: function(){
         var header = $('body'),
-            backgrounds = ['url(lengover2.1.jpg)', 'url(lengcontact.jpg)', 'url(lengcover4.jpg)'],
+            backgrounds = ['url(images/lengover2.1.jpg)', 'url(images/lengcontact.jpg)', 'url(images/lengcover4.jpg)'],
             current = 0;
 
         function nextBackground() {
