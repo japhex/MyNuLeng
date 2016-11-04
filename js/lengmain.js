@@ -2,6 +2,7 @@ $(document).ready(function(){
     // Pageload call to functions to load straight away
     leng.scrollTopPosition();
     leng.backgroundChange();
+    leng.scrollToSection();
 });
 
 // Global leng object to contain functions
@@ -25,5 +26,15 @@ var leng = {
         setInterval(nextBackground, 15000);
 
         header.css('background-image', backgrounds[0]);
+    },
+    scrollToSection: function() {
+        $('body').on('click', '[data-section]', function(){
+            var sectionToFind = $(this).data('section');
+
+            $('html, body').animate({
+                scrollTop: $('.' + sectionToFind).offset().top
+            }, 1000);
+            return false;
+        });
     }
 };
