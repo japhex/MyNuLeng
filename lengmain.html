@@ -9,11 +9,7 @@
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="LengMain.css">
+    <link type="text/css" rel="stylesheet" href="css/lengmain.css">
   </head>
   <body>
     <div id="container">
@@ -151,34 +147,11 @@
       </div>
     </div>-->
      <!--JavaScript Fixed Mobile--> <!--TOO DAMN CHOPPY NEEDS FIXING -->
-     <script>
-     $(window).scroll(function() {
-   var scrolledY = $(window).scrollTop();
-   $('#container').css('background-position', 'left ' + ((scrolledY)) + 'px');
- });
-</script>
-<!--JavaScript Background Change-->
-    <script>
-    var header = $('body');
 
-var backgrounds = new Array(
-    'url(lengover2.1.jpg)'
-  , 'url(lengcontact.jpg)'
-  , 'url(lengcover4.jpg)'
-);
-
-var current = 0;
-
-function nextBackground() {
-    current++;
-    current = current % backgrounds.length;
-    header.css('background-image', backgrounds[current]);
-}
-setInterval(nextBackground, 15000);
-
-header.css('background-image', backgrounds[0]);
-
-</script>
-
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/lengmain.js"></script>
   </body>
 </html>
