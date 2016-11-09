@@ -384,7 +384,7 @@ video {
 
   #container {
   display: inline-block;
-  background-image:url("images/phoneleng.jpg");
+  background-image:url(../images/phoneleng.jpg);
   background-attachment:scroll;
   background position:left top;
   background-size:cover;
