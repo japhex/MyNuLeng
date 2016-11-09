@@ -89,7 +89,7 @@ body {
 .dropdown-content a:hover {
   color: #ff0000; /*sky blue*/
   background-color: #f1f1f1;
-  transition: 4s;
+  transition: 1s;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -206,12 +206,34 @@ video {
 }
 
 @media screen and (max-width: 500px) {
+
+    .dates ul li {
+        border-bottom:1px dashed;
+    }
+
+    .dates ul li:last-child {
+        border-bottom:0;
+    }
+
     .dates ul li span {
         display:block;
     }
 
     .dates ul li span:after {
         content:'';
+    }
+
+    .dates ul li span:last-child {
+        margin-top:10px;
+    }
+
+    .dates .gig-date {
+        font-size:3rem;
+        margin-bottom:5px;
+    }
+
+    .dates .gig-address {
+        font-size:2rem;
     }
 }
 
