@@ -608,6 +608,7 @@ video {
   }
   .footer ul {
     margin-top: 25px;
+    margin-right: 9px;
   }
   .dates .container ul {
       border-bottom: 1px solid #b20000;
@@ -617,6 +618,7 @@ video {
   }
   .btn {
     margin-left: 0px;
+    margin-right: -10px;
   }
 }
 /*
