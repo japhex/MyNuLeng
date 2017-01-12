@@ -1,6 +1,7 @@
+
 @font-face {
-    font-family: manifesto;
-    src: url(../fonts/MANIFESTO.ttf);
+  font-family: avenir;
+  src: url(../fonts/AvenirLTStd-Light.otf);
 }
 * {
 margin: 0;
@@ -12,7 +13,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-  font-family: manifesto;
+  font-family: avenir;
 }
 #cover {
   width: 100%;
